@@ -8,6 +8,9 @@
 
   写出底部导航栏，安装Vue Router，点击底部导航栏时切换到相应的页面
 
+* 2017/3/7
+
+  去掉两个选项，实现TopBar
 ## Build Setup
 
 ``` bash

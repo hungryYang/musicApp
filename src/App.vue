@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <!--<header></header>-->
+    <router-view></router-view>
     <footer>
       <ul>
         <li>
           <router-link to="/discovery">
              <span>
-              <i class="iconfont icon-wangyiyunyinlezizhi-copy"></i>
+              <i class="iconfont icon-wangyiyunyinlezizhi"></i>
             </span>
             <span>发现音乐</span>
           </router-link>
@@ -19,25 +19,8 @@
               <span>我的音乐</span>
           </router-link>
         </li>
-        <li>
-          <router-link to="/friends">
-            <span>
-              <i class="iconfont icon-19"></i>
-            </span>
-            <span>朋 友</span>
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/account">
-            <span>
-             <i class="iconfont icon-account"></i>
-            </span>
-            <span>账 号</span>
-          </router-link>
-        </li>
       </ul>
     </footer>
-    <router-view></router-view>
   </div>
 </template>
 
@@ -45,7 +28,8 @@
 import 'normalize.css'
 
 export default {
-  name: 'app'
+  name: 'app',
+
 }
 </script>
 
@@ -58,32 +42,39 @@ html,body
   height  100vh
   overflow hidden
   position relative
+  font-size 2rem
+  .iconfont
+    font-size 4rem
   header
+    background-color rgb(180,11,11)
+    color white
+    padding 3rem 2rem 1rem 2rem
+    display flex
+    align-items baseline
+    span
+      border .1rem solid transparent
+      display inline-block
+      &:nth-child(2)
+        flex-grow 1
+        margin 0 2rem
+  footer
     background-color rgb(42,42,42)
     width 100%
-    height 8rem
-    position fixed
-  footer
-    background-color rgb(180,11,11)
-    width 100%
-    height 8rem
-    position fixed
+    position absolute
     bottom 0
     ul
       padding-left 0
-      padding-top 1rem
       text-align : center
       margin 0
       color white
-      font-size 1.6rem
+      padding 2rem 0
+      display flex
+      justify-content space-around
       li
         display inline-block
-        width 24%
         a
           color white
           text-decoration none
           span
             display block
-            .iconfont
-              font-size 4rem
 </style>
