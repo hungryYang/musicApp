@@ -4,13 +4,6 @@
 
 一个音乐app 初步打算暂时先只构建出界面，为了熟悉vue-cli和Vue Router的使用
 
-* 2017/3/6
-
-  写出底部导航栏，安装Vue Router，点击底部导航栏时切换到相应的页面
-
-* 2017/3/7
-
-  去掉两个选项，实现TopBar
 ## Build Setup
 
 ``` bash

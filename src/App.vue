@@ -19,6 +19,22 @@
               <span>我的音乐</span>
           </router-link>
         </li>
+        <li>
+          <router-link to="/friends">
+              <span>
+                <i class="iconfont icon-19"></i>
+              </span>
+            <span>朋 友</span>
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/account">
+              <span>
+                <i class="iconfont icon-zhanghao"></i>
+              </span>
+            <span>账 号</span>
+          </router-link>
+        </li>
       </ul>
     </footer>
   </div>
@@ -38,6 +54,9 @@ export default {
   box-sizing border-box
 html,body
   font-size 10px
+ul,li
+  padding 0
+  list-style none
 #app
   height  100vh
   overflow hidden
