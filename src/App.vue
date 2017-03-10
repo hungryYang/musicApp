@@ -42,9 +42,10 @@
 
 <script>
 import 'normalize.css'
-
+import store from './store/index'
 export default {
   name: 'app',
+  store,
 
 }
 </script>
