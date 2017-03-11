@@ -14,7 +14,7 @@
     </header>
     <main>
       <ul v-for="songs in musicList">
-        <li @click="getSong(songs.id)">
+        <li @click="getSong(songs)">
           <span>{{songs.name}}</span>
           <span>{{songs.ar[0].name}}</span>
         </li>
@@ -25,7 +25,7 @@
 
 <script type="text/ecmascript-6">
   import Playing from './Playing'
-
+  import NowPlaying from './NowPlaying'
   export default {
     name:'DiscoverMusic',
     computed:{
@@ -41,13 +41,27 @@
         var _song = "type=search" +"&s=" + document.getElementsByName("search_text")[0].value;
         this.$store.dispatch('search',_song)
       },
-      getSong(songId){
-        let song = this.$store.state.mp3
+      getSong(song){
+        let songId = song.id;
         this.$store.dispatch('get',songId);
-        console.log(song)
+        var _this = this;
+
+        let img = song.al.picUrl;
+        let musicName = song.name;
+        let singer = song.ar[0].name;
+
+        console.log(img)
+        let oldMusic={
+          songId,
+          img,
+          singer,
+          musicName,
+        }
+        _this.$store.commit('addOldMusic', oldMusic)
+        this.$store.commit('updateOldMusicList')
       }
     },
-    components:{Playing}
+    components:{Playing,NowPlaying}
   }
 </script>
 

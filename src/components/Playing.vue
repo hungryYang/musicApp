@@ -1,11 +1,15 @@
 <template>
-  <router-link to="/nowplaying">
-    <span><i class="iconfont icon-yinle"></i></span>
-  </router-link>
+    <span @click='test'><i class="iconfont icon-yinle"></i></span>
 </template>
 
 <script type="text/ecmascript-6">
-  export default {}
+  export default {
+    methods:{
+      test(){
+        this.$store.state.playingFlag = 'true'
+      }
+    }
+  }
 </script>
 
 <style lang='stylus' rel='stylesheet/stylus' scoped>

@@ -5,7 +5,9 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     musicList: [],
-    mp3:''
+    mp3:'',
+    oldMusicList:[],
+    playingFlag:''
   },
   mutations: {
     Ajax(state,{type:type, url:url, data:data, success:success, failed:failed}){
@@ -56,8 +58,20 @@ export default new Vuex.Store({
           }
         }
       }
-
     },
+    addOldMusic(state,deploy){
+      for (let key in state.oldMusicList){
+        if(state.oldMusicList[key].songId === deploy.songId)
+          return
+      }
+      state.oldMusicList.push(deploy)
+    },
+    updateOldMusicList(state){
+      localStorage.setItem('oldMusicList',JSON.stringify(state.oldMusicList))
+    },
+    loadOldMusic(state,deploy){
+      state.oldMusicList = deploy;
+    }
   },
   actions:{
     search ({commit,state},_song){
@@ -83,9 +97,8 @@ export default new Vuex.Store({
         success:function (data) {
           // var url,a,filename;
           data = JSON.parse(data);
-          console.log(data)
           state.mp3 = data.data[0].url
-          console.log(state.mp3)
+          state.playingFlag = state.mp3
         }
       })
     }

@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div id="test">
+    <button @click="close">x</button>
     <audio id="play" autoplay controls="controls">
       <source :src="mp3">
     </audio>
@@ -19,19 +20,27 @@
         var audio = document.getElementById('play');
         audio.setAttribute('src',_this.$store.state.mp3)
       },1000)
+    },
+    methods:{
+      close(){
+        this.$store.state.playingFlag = ''
+      }
     }
   }
 </script>
 
 <style scoped lang='stylus' rel='stylesheet/stylus'>
-  div
+  div#test
     position absolute
     width 100%
     height 100%
-    background-color black
     right 0
+    background-color black
     z-index 1
     #play
       width 100%
+      position absolute
+      bottom 0
+      left 0
 </style>
 

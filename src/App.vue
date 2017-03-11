@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div v-if="mp3" id="nowPlaying">
+    <div v-show="playingFlag" id="nowPlaying">
       <NowPlaying></NowPlaying>
     </div>
     <router-view></router-view>
@@ -49,9 +49,16 @@ import store from './store/index'
 import NowPlaying from './components/NowPlaying'
 export default {
   name: 'app',
+  created(){
+    let oldMusicList = localStorage.getItem('oldMusicList')
+    if(oldMusicList){
+      oldMusicList = JSON.parse(oldMusicList)
+      this.$store.commit('loadOldMusic',oldMusicList)
+    }
+  },
   computed:{
-    mp3(){
-      return this.$store.state.mp3
+    playingFlag(){
+      return this.$store.state.playingFlag
     }
   },
   store,
