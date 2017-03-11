@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div v-if="mp3" id="nowPlaying">
+      <NowPlaying></NowPlaying>
+    </div>
     <router-view></router-view>
     <footer>
       <ul>
@@ -43,10 +46,16 @@
 <script>
 import 'normalize.css'
 import store from './store/index'
+import NowPlaying from './components/NowPlaying'
 export default {
   name: 'app',
+  computed:{
+    mp3(){
+      return this.$store.state.mp3
+    }
+  },
   store,
-
+  components:{NowPlaying}
 }
 </script>
 

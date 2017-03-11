@@ -83,6 +83,7 @@ export default new Vuex.Store({
         success:function (data) {
           // var url,a,filename;
           data = JSON.parse(data);
+          console.log(data)
           state.mp3 = data.data[0].url
           console.log(state.mp3)
         }

@@ -13,10 +13,6 @@
         </span>
     </header>
     <main>
-      {{mp3}}
-      <audio id="play" autoplay controls="controls">
-        <source :src="mp3">
-      </audio>
       <ul v-for="songs in musicList">
         <li @click="getSong(songs.id)">
           <span>{{songs.name}}</span>
@@ -49,11 +45,6 @@
         let song = this.$store.state.mp3
         this.$store.dispatch('get',songId);
         console.log(song)
-        var _this=this;
-        setTimeout(function(){
-          var audio = document.getElementById('play');
-          audio.setAttribute('src',_this.$store.state.mp3)
-        },1000)
       }
     },
     components:{Playing}
