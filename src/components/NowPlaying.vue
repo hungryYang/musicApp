@@ -5,7 +5,7 @@
       <span>{{nowPlay.musicName}}</span>
       <span>{{nowPlay.singer}}</span>
     </header>
-    <div id="test">aaaa</div>
+    <div id="backImg"></div>
     <audio id="play"  controls="controls">
       <source :src="mp3">
     </audio>
@@ -28,8 +28,8 @@
         var audio = document.getElementById('play');
         audio.setAttribute('src',_this.$store.state.mp3)
       },500)
-      document.querySelector('#test').style.background = 'url('+this.$store.state.nowPlay.img+')'+' repeat-x'
-      document.querySelector('#test').style.backgroundSize = 'contain'
+      document.querySelector('#backImg').style.background = 'url('+this.$store.state.nowPlay.img+')'+' repeat-x'
+      document.querySelector('#backImg').style.backgroundSize = 'contain'
       // document.querySelector('#test').style.backgroundPosition = '1%'
     },
     methods:{
@@ -53,7 +53,7 @@
       position absolute
       bottom 0
       left 0
-    #test
+    #backImg
       height 70vh
 </style>
 

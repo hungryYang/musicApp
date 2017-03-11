@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e5c9a58-7708-4bc9-993a-dd5261225ea4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/DiscoveryMusic.vue" afterPath="$PROJECT_DIR$/src/components/DiscoveryMusic.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/MyMusic.vue" afterPath="$PROJECT_DIR$/src/components/MyMusic.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/NowPlaying.vue" afterPath="$PROJECT_DIR$/src/components/NowPlaying.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Playing.vue" afterPath="$PROJECT_DIR$/src/components/Playing.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/index.js" afterPath="$PROJECT_DIR$/src/store/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -140,17 +136,17 @@
       <file leaf-file-name="NowPlaying.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/NowPlaying.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+            <state relative-caret-position="482">
+              <caret line="55" column="12" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
               <folding>
-                <marker date="1489239216831" expanded="true" signature="368:1065" ph="{...}" />
-                <marker date="1489239216831" expanded="true" signature="383:515" ph="{...}" />
-                <marker date="1489239216831" expanded="true" signature="396:442" ph="{...}" />
-                <marker date="1489239216831" expanded="true" signature="459:509" ph="{...}" />
-                <marker date="1489239216831" expanded="true" signature="539:974" ph="{...}" />
-                <marker date="1489239216831" expanded="true" signature="590:709" ph="{...}" />
-                <marker date="1489239216831" expanded="true" signature="988:1061" ph="{...}" />
-                <marker date="1489239216831" expanded="true" signature="1003:1055" ph="{...}" />
+                <marker date="1489239358861" expanded="true" signature="367:1070" ph="{...}" />
+                <marker date="1489239358861" expanded="true" signature="382:514" ph="{...}" />
+                <marker date="1489239358861" expanded="true" signature="395:441" ph="{...}" />
+                <marker date="1489239358861" expanded="true" signature="458:508" ph="{...}" />
+                <marker date="1489239358861" expanded="true" signature="538:979" ph="{...}" />
+                <marker date="1489239358861" expanded="true" signature="589:708" ph="{...}" />
+                <marker date="1489239358861" expanded="true" signature="993:1066" ph="{...}" />
+                <marker date="1489239358861" expanded="true" signature="1008:1060" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -423,12 +419,12 @@
       <workItem from="1489125829716" duration="736000" />
       <workItem from="1489141570669" duration="9138000" />
       <workItem from="1489152301690" duration="5473000" />
-      <workItem from="1489195311125" duration="26221000" />
+      <workItem from="1489195311125" duration="26360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66440000" />
+    <option name="totallyTimeSpent" value="66579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1929" y="-9" width="1938" height="1048" extended-state="0" />
@@ -906,17 +902,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NowPlaying.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        <state relative-caret-position="482">
+          <caret line="55" column="12" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
           <folding>
-            <marker date="1489239216831" expanded="true" signature="368:1065" ph="{...}" />
-            <marker date="1489239216831" expanded="true" signature="383:515" ph="{...}" />
-            <marker date="1489239216831" expanded="true" signature="396:442" ph="{...}" />
-            <marker date="1489239216831" expanded="true" signature="459:509" ph="{...}" />
-            <marker date="1489239216831" expanded="true" signature="539:974" ph="{...}" />
-            <marker date="1489239216831" expanded="true" signature="590:709" ph="{...}" />
-            <marker date="1489239216831" expanded="true" signature="988:1061" ph="{...}" />
-            <marker date="1489239216831" expanded="true" signature="1003:1055" ph="{...}" />
+            <marker date="1489239358861" expanded="true" signature="367:1070" ph="{...}" />
+            <marker date="1489239358861" expanded="true" signature="382:514" ph="{...}" />
+            <marker date="1489239358861" expanded="true" signature="395:441" ph="{...}" />
+            <marker date="1489239358861" expanded="true" signature="458:508" ph="{...}" />
+            <marker date="1489239358861" expanded="true" signature="538:979" ph="{...}" />
+            <marker date="1489239358861" expanded="true" signature="589:708" ph="{...}" />
+            <marker date="1489239358861" expanded="true" signature="993:1066" ph="{...}" />
+            <marker date="1489239358861" expanded="true" signature="1008:1060" ph="{...}" />
           </folding>
         </state>
       </provider>
