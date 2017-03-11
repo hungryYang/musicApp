@@ -13,9 +13,14 @@
         </span>
     </header>
     <main>
+      {{mp3}}
+      <audio id="play" autoplay controls="controls">
+        <source :src="mp3">
+      </audio>
       <ul v-for="songs in musicList">
-        <li>
-          <div>{{songs.name}}</div>
+        <li @click="getSong(songs.id)">
+          <span>{{songs.name}}</span>
+          <span>{{songs.ar[0].name}}</span>
         </li>
       </ul>
     </main>
@@ -31,8 +36,8 @@
       musicList(){
         return this.$store.state.musicList
       },
-      count(){
-        return this.$store.state.count
+      mp3(){
+        return this.$store.state.mp3
       }
     },
     methods:{
@@ -40,9 +45,15 @@
         var _song = "type=search" +"&s=" + document.getElementsByName("search_text")[0].value;
         this.$store.dispatch('search',_song)
       },
-      add(){
-        this.$store.commit('increment')
-        console.log(this.$store.state.musicList)
+      getSong(songId){
+        let song = this.$store.state.mp3
+        this.$store.dispatch('get',songId);
+        console.log(song)
+        var _this=this;
+        setTimeout(function(){
+          var audio = document.getElementById('play');
+          audio.setAttribute('src',_this.$store.state.mp3)
+        },1000)
       }
     },
     components:{Playing}

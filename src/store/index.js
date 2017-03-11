@@ -4,12 +4,12 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
-    musicList: []
+    musicList: [],
+    mp3:''
   },
   mutations: {
     Ajax(state,{type:type, url:url, data:data, success:success, failed:failed}){
       // 创建ajax对象
-      console.log(type,url,data)
       var xhr = null;
       if(window.XMLHttpRequest){
         xhr = new XMLHttpRequest();
@@ -58,24 +58,9 @@ export default new Vuex.Store({
       }
 
     },
-    search(state,_song){
-        console.log(this)
-        this.Ajax(  //Ajax(type, url, data, success, failed)
-        'get',
-        'https://api.imjad.cn/cloudmusic/',
-        _song,
-        function(data){
-          data = JSON.parse(data);
-          state.musicList = data.result.songs;
-        },
-        function(error){
-          alert(error)
-        });
-    }
   },
   actions:{
     search ({commit,state},_song){
-      console.log(_song)
       commit('Ajax',{
         type:'get',
         url:'https://api.imjad.cn/cloudmusic/',
@@ -88,7 +73,21 @@ export default new Vuex.Store({
           alert(error)
         },
        });
+    },
+    get({commit,state},songId){
+      var _get = "type=song"  +"&id=" +songId+"&br=128000";
+      commit('Ajax',{
+        type:'get',
+        url:'https://api.imjad.cn/cloudmusic/',
+        data:_get,
+        success:function (data) {
+          // var url,a,filename;
+          data = JSON.parse(data);
+          state.mp3 = data.data[0].url
+          console.log(state.mp3)
+        }
+      })
     }
-  }
 
+  }
 })
