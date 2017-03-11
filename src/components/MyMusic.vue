@@ -12,8 +12,8 @@
       </span>
     </header>
     <main>
-      <ul v-for="oldMusic in oldMusicList">
-        <li @click="getSong(oldMusic)">
+      <ul>
+        <li v-for="oldMusic in oldMusicList" @click="getSong(oldMusic)">
           <span>{{oldMusic.musicName}}</span>
           <span>{{oldMusic.singer}}</span>
         </li>

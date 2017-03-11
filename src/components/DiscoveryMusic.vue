@@ -13,8 +13,8 @@
         </span>
     </header>
     <main>
-      <ul v-for="songs in musicList">
-        <li @click="getSong(songs)">
+      <ul>
+        <li v-for="songs in musicList" @click="getSong(songs)">
           <span>{{songs.name}}</span>
           <span>{{songs.ar[0].name}}</span>
         </li>

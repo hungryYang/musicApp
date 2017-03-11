@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e5c9a58-7708-4bc9-993a-dd5261225ea4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/NowPlaying.vue" afterPath="$PROJECT_DIR$/src/components/NowPlaying.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/DiscoveryMusic.vue" afterPath="$PROJECT_DIR$/src/components/DiscoveryMusic.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/MyMusic.vue" afterPath="$PROJECT_DIR$/src/components/MyMusic.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,18 +34,18 @@
       <file leaf-file-name="DiscoveryMusic.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/DiscoveryMusic.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="60" column="48" lean-forward="false" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+            <state relative-caret-position="576">
+              <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding>
-                <marker date="1489227506402" expanded="true" signature="648:712" ph="..." />
-                <marker date="1489227506402" expanded="true" signature="730:1608" ph="{...}" />
-                <marker date="1489227506402" expanded="true" signature="771:907" ph="{...}" />
-                <marker date="1489227506402" expanded="true" signature="790:842" ph="{...}" />
-                <marker date="1489227506402" expanded="true" signature="855:901" ph="{...}" />
-                <marker date="1489227506402" expanded="true" signature="921:1567" ph="{...}" />
-                <marker date="1489227506402" expanded="true" signature="941:1090" ph="{...}" />
-                <marker date="1489227506402" expanded="true" signature="1111:1561" ph="{...}" />
-                <marker date="1489227506402" expanded="true" signature="1368:1451" ph="{&quot;songId&quot;: songId...}" />
+                <marker date="1489230322805" expanded="true" signature="648:712" ph="..." />
+                <marker date="1489230322805" expanded="true" signature="730:1608" ph="{...}" />
+                <marker date="1489230322805" expanded="true" signature="771:907" ph="{...}" />
+                <marker date="1489230322805" expanded="true" signature="790:842" ph="{...}" />
+                <marker date="1489230322805" expanded="true" signature="855:901" ph="{...}" />
+                <marker date="1489230322805" expanded="true" signature="921:1567" ph="{...}" />
+                <marker date="1489230322805" expanded="true" signature="941:1090" ph="{...}" />
+                <marker date="1489230322805" expanded="true" signature="1111:1561" ph="{...}" />
+                <marker date="1489230322805" expanded="true" signature="1368:1451" ph="{&quot;songId&quot;: songId...}" />
               </folding>
             </state>
           </provider>
@@ -77,17 +78,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyMusic.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyMusic.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/MyMusic.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+            <state relative-caret-position="288">
+              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding>
-                <marker date="1489227506365" expanded="true" signature="514:778" ph="{...}" />
-                <marker date="1489227506365" expanded="true" signature="529:612" ph="{...}" />
-                <marker date="1489227506365" expanded="true" signature="551:606" ph="{...}" />
-                <marker date="1489227506365" expanded="true" signature="626:748" ph="{...}" />
-                <marker date="1489227506365" expanded="true" signature="651:742" ph="{...}" />
+                <marker date="1489230373372" expanded="true" signature="514:778" ph="{...}" />
+                <marker date="1489230373372" expanded="true" signature="529:612" ph="{...}" />
+                <marker date="1489230373372" expanded="true" signature="551:606" ph="{...}" />
+                <marker date="1489230373372" expanded="true" signature="626:748" ph="{...}" />
+                <marker date="1489230373372" expanded="true" signature="651:742" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -131,10 +132,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NowPlaying.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NowPlaying.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/NowPlaying.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="756">
               <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding>
                 <marker date="1489229487249" expanded="true" signature="230:606" ph="{...}" />
@@ -198,11 +199,11 @@
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/components/Playing.vue" />
-        <option value="$PROJECT_DIR$/src/components/DiscoveryMusic.vue" />
-        <option value="$PROJECT_DIR$/src/components/MyMusic.vue" />
         <option value="$PROJECT_DIR$/src/store/index.js" />
         <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/components/NowPlaying.vue" />
+        <option value="$PROJECT_DIR$/src/components/DiscoveryMusic.vue" />
+        <option value="$PROJECT_DIR$/src/components/MyMusic.vue" />
       </list>
     </option>
   </component>
@@ -416,12 +417,12 @@
       <workItem from="1489125829716" duration="736000" />
       <workItem from="1489141570669" duration="9138000" />
       <workItem from="1489152301690" duration="5473000" />
-      <workItem from="1489195311125" duration="17456000" />
+      <workItem from="1489195311125" duration="18161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57675000" />
+    <option name="totallyTimeSpent" value="58380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1929" y="-9" width="1938" height="1048" extended-state="0" />
@@ -845,24 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DiscoveryMusic.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="60" column="48" lean-forward="false" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
-          <folding>
-            <marker date="1489227506402" expanded="true" signature="648:712" ph="..." />
-            <marker date="1489227506402" expanded="true" signature="730:1608" ph="{...}" />
-            <marker date="1489227506402" expanded="true" signature="771:907" ph="{...}" />
-            <marker date="1489227506402" expanded="true" signature="790:842" ph="{...}" />
-            <marker date="1489227506402" expanded="true" signature="855:901" ph="{...}" />
-            <marker date="1489227506402" expanded="true" signature="921:1567" ph="{...}" />
-            <marker date="1489227506402" expanded="true" signature="941:1090" ph="{...}" />
-            <marker date="1489227506402" expanded="true" signature="1111:1561" ph="{...}" />
-            <marker date="1489227506402" expanded="true" signature="1368:1451" ph="{&quot;songId&quot;: songId...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -881,23 +864,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MyMusic.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding>
-            <marker date="1489227506365" expanded="true" signature="514:778" ph="{...}" />
-            <marker date="1489227506365" expanded="true" signature="529:612" ph="{...}" />
-            <marker date="1489227506365" expanded="true" signature="551:606" ph="{...}" />
-            <marker date="1489227506365" expanded="true" signature="626:748" ph="{...}" />
-            <marker date="1489227506365" expanded="true" signature="651:742" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NowPlaying.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="756">
           <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding>
             <marker date="1489229487249" expanded="true" signature="230:606" ph="{...}" />
@@ -907,6 +876,38 @@
             <marker date="1489229487249" expanded="true" signature="385:504" ph="{...}" />
             <marker date="1489229487249" expanded="true" signature="529:602" ph="{...}" />
             <marker date="1489229487249" expanded="true" signature="544:596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DiscoveryMusic.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding>
+            <marker date="1489230322805" expanded="true" signature="648:712" ph="..." />
+            <marker date="1489230322805" expanded="true" signature="730:1608" ph="{...}" />
+            <marker date="1489230322805" expanded="true" signature="771:907" ph="{...}" />
+            <marker date="1489230322805" expanded="true" signature="790:842" ph="{...}" />
+            <marker date="1489230322805" expanded="true" signature="855:901" ph="{...}" />
+            <marker date="1489230322805" expanded="true" signature="921:1567" ph="{...}" />
+            <marker date="1489230322805" expanded="true" signature="941:1090" ph="{...}" />
+            <marker date="1489230322805" expanded="true" signature="1111:1561" ph="{...}" />
+            <marker date="1489230322805" expanded="true" signature="1368:1451" ph="{&quot;songId&quot;: songId...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MyMusic.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <marker date="1489230373372" expanded="true" signature="514:778" ph="{...}" />
+            <marker date="1489230373372" expanded="true" signature="529:612" ph="{...}" />
+            <marker date="1489230373372" expanded="true" signature="551:606" ph="{...}" />
+            <marker date="1489230373372" expanded="true" signature="626:748" ph="{...}" />
+            <marker date="1489230373372" expanded="true" signature="651:742" ph="{...}" />
           </folding>
         </state>
       </provider>
