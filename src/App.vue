@@ -71,13 +71,13 @@ ul,li
   height  100vh
   overflow hidden
   position relative
-  font-size 2rem
+  font-size 1.6rem
   .iconfont
-    font-size 4rem
+    font-size 2rem
   header
     background-color rgb(180,11,11)
     color white
-    padding 3rem 2rem 1rem 2rem
+    padding 2rem 2rem 1rem 2rem
     display flex
     align-items baseline
     span
@@ -96,7 +96,7 @@ ul,li
       text-align : center
       margin 0
       color white
-      padding 2rem 0
+      padding 1rem 0
       display flex
       justify-content space-around
       li

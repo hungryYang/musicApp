@@ -64,9 +64,9 @@
           display inline-block
           border none
           padding 0
-          width : 90%
-          line-height 4rem
-          font-size 4rem
+          width : 80%
+          line-height 2rem
+          font-size 2rem
           outline:none
   main
     height 80vh
