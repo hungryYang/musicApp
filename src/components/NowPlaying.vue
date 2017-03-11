@@ -19,7 +19,7 @@
       setTimeout(function(){
         var audio = document.getElementById('play');
         audio.setAttribute('src',_this.$store.state.mp3)
-      },1000)
+      },500)
     },
     methods:{
       close(){
