@@ -1,11 +1,11 @@
 <template>
-    <span @click='test'><i class="iconfont icon-yinle"></i></span>
+    <span @click='show'><i class="iconfont icon-yinle"></i></span>
 </template>
 
 <script type="text/ecmascript-6">
   export default {
     methods:{
-      test(){
+      show(){
         this.$store.state.playingFlag = 'true'
       }
     }

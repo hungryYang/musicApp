@@ -7,7 +7,13 @@ export default new Vuex.Store({
     musicList: [],
     mp3:'',
     oldMusicList:[],
-    playingFlag:''
+    playingFlag:'',
+    img:'',
+    nowPlay:{
+      img:'',
+      musicName:'',
+      singer:''
+    }
   },
   mutations: {
     Ajax(state,{type:type, url:url, data:data, success:success, failed:failed}){
@@ -71,6 +77,9 @@ export default new Vuex.Store({
     },
     loadOldMusic(state,deploy){
       state.oldMusicList = deploy;
+    },
+    setNowMusic(state,deploy){
+      state.nowPlay = deploy
     }
   },
   actions:{

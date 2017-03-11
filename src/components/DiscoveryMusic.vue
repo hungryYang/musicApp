@@ -44,21 +44,25 @@
       getSong(song){
         let songId = song.id;
         this.$store.dispatch('get',songId);
-        var _this = this;
 
         let img = song.al.picUrl;
         let musicName = song.name;
         let singer = song.ar[0].name;
 
-        console.log(img)
         let oldMusic={
           songId,
           img,
           singer,
           musicName,
         }
-        _this.$store.commit('addOldMusic', oldMusic)
+        this.$store.commit('addOldMusic', oldMusic)
         this.$store.commit('updateOldMusicList')
+        let nowMusic ={
+          img,
+          musicName,
+          singer
+        }
+        this.$store.commit('setNowMusic', nowMusic)
       }
     },
     components:{Playing,NowPlaying}
