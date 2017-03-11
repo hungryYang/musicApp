@@ -1,7 +1,7 @@
 <template>
   <div id="test">
     <button @click="close">x</button>
-    <audio id="play" autoplay controls="controls">
+    <audio id="play" controls="controls">
       <source :src="mp3">
     </audio>
   </div>
@@ -19,6 +19,7 @@
       setTimeout(function(){
         var audio = document.getElementById('play');
         audio.setAttribute('src',_this.$store.state.mp3)
+        document.querySelector('audio').play()
       },500)
     },
     methods:{
