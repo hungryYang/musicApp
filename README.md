@@ -2,8 +2,9 @@
 
 > A Vue.js project
 
-一个音乐app 初步打算暂时先只构建出界面，为了熟悉vue-cli和Vue Router的使用
-
+一个音乐app
+用于熟悉vue-cli 进一步了解Vuex 学习Vue Router的使用
+暂时完成播放以及存储最近播放功能
 ## Build Setup
 
 ``` bash

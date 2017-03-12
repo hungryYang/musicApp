@@ -2,10 +2,9 @@
   <div>
     <header>
       <span>
-         更多
-        </span>
+      </span>
       <span>
-         我的音乐
+         最近播放
       </span>
       <span>
           <Playing></Playing>
@@ -59,5 +58,13 @@
   main
     height : 80vh
     overflow-y scroll
+    ul
+      >li
+        padding: .5rem
+        display flex
+        justify-content space-between
+        border-bottom 1px solid lightgrey
+        &:last-child
+          border none
 </style>
 

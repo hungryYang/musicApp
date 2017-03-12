@@ -1,12 +1,17 @@
 <template>
   <div id="NowPlaying" >
-    <header >
-      <button @click="close">x</button>
-      <span>{{nowPlay.musicName}}</span>
-      <span>{{nowPlay.singer}}</span>
-    </header>
-    <div id="backImg"></div>
-    <audio id="play"  controls="controls">
+    <div id="header">
+      <div @click="close"><</div>
+      <div>
+        <div>{{nowPlay.musicName}}</div>
+        <div>{{nowPlay.singer}}</div>
+      </div>
+      <div></div>
+    </div>
+    <div id="backImg">
+      
+    </div>
+    <audio id="play" loop autoplay controls="controls">
       <source :src="mp3">
     </audio>
   </div>
@@ -47,7 +52,16 @@
     height 100%
     right 0
     z-index 1
-    background-color white
+    background url("../assets/back.png")
+    #header
+      padding 3rem 2rem
+      color white
+      display flex
+      justify-content space-between
+      align-items center
+      background-color rgba(56,54,53,1)
+      border-bottom 1px solid black
+      text-align center
     #play
       width 100%
       position absolute
@@ -55,5 +69,6 @@
       left 0
     #backImg
       height 70vh
+      margin-top 3rem
 </style>
 

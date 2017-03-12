@@ -2,11 +2,11 @@
   <div>
     <header>
         <span>
-          <i class="iconfont icon-tinggeshiqu"></i>
+          <!--<i class="iconfont icon-tinggeshiqu"></i>-->
         </span>
         <span>
           <i class="iconfont icon-sousuo_sousuo"></i>
-          <input type="search" placeholder="搜索音乐、歌词、电台" name="search_text" @keyup.enter='searchSong'>
+          <input type="search" placeholder="搜索音乐" name="search_text" @keyup.enter='searchSong'>
         </span>
         <span>
           <Playing></Playing>
@@ -35,6 +35,8 @@
       mp3(){
         return this.$store.state.mp3
       }
+    },
+    updated(){
     },
     methods:{
       searchSong(){
@@ -89,5 +91,13 @@
   main
     height 80vh
     overflow-y scroll
+    ul
+      >li
+        padding: .5rem
+        display flex
+        justify-content space-between
+        border-bottom 1px solid lightgrey
+        &:last-child
+          border none
 </style>
 

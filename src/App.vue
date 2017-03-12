@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <div v-show="playingFlag" id="nowPlaying">
-      <NowPlaying></NowPlaying>
-    </div>
+    <transition name="bounce">
+      <div v-show="playingFlag" id="nowPlaying">
+        <NowPlaying></NowPlaying>
+      </div>
+    </transition>
     <router-view></router-view>
     <footer>
       <ul>
@@ -19,25 +21,25 @@
               <span>
                 <i class="iconfont icon-iconupload"></i>
               </span>
-              <span>我的音乐</span>
+              <span>最近播放</span>
           </router-link>
         </li>
-        <li>
-          <router-link to="/friends">
-              <span>
-                <i class="iconfont icon-19"></i>
-              </span>
-            <span>朋 友</span>
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/account">
-              <span>
-                <i class="iconfont icon-zhanghao"></i>
-              </span>
-            <span>账 号</span>
-          </router-link>
-        </li>
+        <!--<li>-->
+          <!--<router-link to="/friends">-->
+              <!--<span>-->
+                <!--<i class="iconfont icon-19"></i>-->
+              <!--</span>-->
+            <!--<span>朋 友</span>-->
+          <!--</router-link>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<router-link to="/account">-->
+              <!--<span>-->
+                <!--<i class="iconfont icon-zhanghao"></i>-->
+              <!--</span>-->
+            <!--<span>账 号</span>-->
+          <!--</router-link>-->
+        <!--</li>-->
       </ul>
     </footer>
   </div>
@@ -113,4 +115,26 @@ ul,li
           text-decoration none
           span
             display block
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-out .5s;
+}
+@keyframes bounce-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes bounce-out {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 </style>
