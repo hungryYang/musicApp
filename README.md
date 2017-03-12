@@ -5,6 +5,12 @@
 一个音乐app
 用于熟悉vue-cli 进一步了解Vuex 学习Vue Router的使用
 暂时完成播放以及存储最近播放功能
+
+手机扫码：
+
+![二维码](./erweima.png)
+
+iphone推荐用Safari打开
 ## Build Setup
 
 ``` bash
