@@ -2,23 +2,29 @@
   <div>
     <header>
         <span>
-          <!--<i class="iconfont icon-tinggeshiqu"></i>-->
+          
         </span>
+
         <span>
           <i class="iconfont icon-sousuo_sousuo"></i>
           <input type="search" placeholder="搜索音乐" name="search_text" @keyup.enter='searchSong'>
+          <button @click='searchSong'>搜索音乐</button>
         </span>
+        
         <span>
           <Playing></Playing>
         </span>
     </header>
     <main>
-      <ul>
+      <ul v-if=musicList[0]>
         <li v-for="songs in musicList" @click="getSong(songs)">
           <span>{{songs.name}}</span>
           <span>{{songs.ar[0].name}}</span>
         </li>
       </ul>
+      <div id="loading"v-else>
+        请搜索您喜欢的音乐、歌手
+      </div>
     </main>
   </div>
 </template>
@@ -40,8 +46,19 @@
     },
     methods:{
       searchSong(){
-        var _song = "type=search" +"&s=" + document.getElementsByName("search_text")[0].value;
-        this.$store.dispatch('search',_song)
+        if(document.getElementsByName("search_text")[0].value ==''){
+          document.querySelector("#loading").innerText='请输入想要搜索的内容。。。'
+          return
+        }
+        if(document.querySelector("#loading")){
+          document.querySelector("#loading").innerText='正在搜索...'
+        }
+        document.querySelector("button").innerText='正在搜索'
+        var _song = "type=search"+"&limit=100" +"&s=" + document.getElementsByName("search_text")[0].value;
+        this.$store.dispatch('search',_song).then(()=>{
+          document.querySelector("button").innerText='搜索音乐'
+        })
+        
       },
       getSong(song){
         let songId = song.id;
@@ -88,6 +105,8 @@
           line-height 2rem
           font-size 2rem
           outline:none
+        button
+          float:right
   main
     height 80vh
     overflow-y scroll

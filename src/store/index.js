@@ -84,18 +84,28 @@ export default new Vuex.Store({
   },
   actions:{
     search ({commit,state},_song){
-      commit('Ajax',{
-        type:'get',
-        url:'https://api.imjad.cn/cloudmusic/',
-        data:_song,
-        success:function(data){
-          data = JSON.parse(data);
-          state.musicList = data.result.songs;
-        },
-        failed:function(error){
-          alert(error)
-        },
-       });
+      console.log(333)
+      return Promise.resolve({
+        then:(resolve,reject)=>{
+          commit('Ajax',{
+            type:'get',
+            url:'https://api.imjad.cn/cloudmusic/',
+            data:_song,
+            success:function(data){
+              data = JSON.parse(data);
+              state.musicList = data.result.songs;
+              console.log(data)
+              resolve()
+            },
+            failed:function(error){
+              alert(error)
+            },
+           });
+
+          //
+        }
+      })
+     
     },
     get({commit,state},songId){
       var _get = "type=song"  +"&id=" +songId+"&br=128000";
