@@ -2,15 +2,19 @@
   <div>
     <header>
         <span>
-          
+
         </span>
 
         <span>
-          <i class="iconfont icon-sousuo_sousuo"></i>
-          <input type="search" placeholder="搜索音乐" name="search_text" @keyup.enter='searchSong'>
-          <button @click='searchSong'>搜索音乐</button>
+
+          <form @submit.prevent="searchSong">
+              <i class="iconfont icon-sousuo_sousuo"></i>
+            <input type="search" placeholder="搜索音乐" name="search_text" @keyup.enter='searchSong'>
+          </form>
+
+          <!--<button @click='searchSong'>搜索音乐</button>-->
         </span>
-        
+
         <span>
           <Playing></Playing>
         </span>
@@ -58,7 +62,7 @@
         this.$store.dispatch('search',_song).then(()=>{
           document.querySelector("button").innerText='搜索音乐'
         })
-        
+
       },
       getSong(song){
         let songId = song.id;

@@ -86,20 +86,24 @@ ul,li
   header
     background-color rgb(180,11,11)
     color white
-    padding 2rem 2rem 1rem 2rem
+    padding 2rem 2rem
     display flex
-    align-items baseline
+    align-items center
+    height 10vh
     span
       border .1rem solid transparent
       display inline-block
       &:nth-child(2)
         flex-grow 1
         margin 0 2rem
+  main
+    height 80vh
   footer
     background-color rgb(42,42,42)
     width 100%
     position absolute
     bottom 0
+    height 10vh
     ul
       padding-left 0
       text-align : center
@@ -108,6 +112,8 @@ ul,li
       padding 1rem 0
       display flex
       justify-content space-around
+      height inherit
+      align-items center
       li
         display inline-block
         a
