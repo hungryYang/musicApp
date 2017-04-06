@@ -84,40 +84,37 @@ export default new Vuex.Store({
   },
   actions:{
     search ({commit,state},_song){
-      console.log(333)
+
+      commit('Ajax',{
+        type:'get',
+        url:'https://api.imjad.cn/cloudmusic/',
+        data:_song,
+        success:function(data){
+          data = JSON.parse(data);
+          state.musicList = data.result.songs;
+        },
+        failed:function(error){
+          alert(error)
+        },
+     });
+
+    },
+    get({commit,state},songId){
+      var _get = "type=song"  +"&id=" +songId+"&br=128000";
       return Promise.resolve({
         then:(resolve,reject)=>{
           commit('Ajax',{
             type:'get',
             url:'https://api.imjad.cn/cloudmusic/',
-            data:_song,
-            success:function(data){
+            data:_get,
+            success:function (data) {
+              // var url,a,filename;
               data = JSON.parse(data);
-              state.musicList = data.result.songs;
-              console.log(data)
+              state.mp3 = data.data[0].url
+              state.playingFlag = state.mp3
               resolve()
-            },
-            failed:function(error){
-              alert(error)
-            },
-           });
-
-          //
-        }
-      })
-     
-    },
-    get({commit,state},songId){
-      var _get = "type=song"  +"&id=" +songId+"&br=128000";
-      commit('Ajax',{
-        type:'get',
-        url:'https://api.imjad.cn/cloudmusic/',
-        data:_get,
-        success:function (data) {
-          // var url,a,filename;
-          data = JSON.parse(data);
-          state.mp3 = data.data[0].url
-          state.playingFlag = state.mp3
+            }
+          })
         }
       })
     }

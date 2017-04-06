@@ -57,35 +57,32 @@
         if(document.querySelector("#loading")){
           document.querySelector("#loading").innerText='正在搜索...'
         }
-        document.querySelector("button").innerText='正在搜索'
         var _song = "type=search"+"&limit=100" +"&s=" + document.getElementsByName("search_text")[0].value;
-        this.$store.dispatch('search',_song).then(()=>{
-          document.querySelector("button").innerText='搜索音乐'
-        })
+        this.$store.dispatch('search',_song)
 
       },
       getSong(song){
         let songId = song.id;
-        this.$store.dispatch('get',songId);
+        this.$store.dispatch('get',songId).then(()=>{
+          let img = song.al.picUrl;
+          let musicName = song.name;
+          let singer = song.ar[0].name;
 
-        let img = song.al.picUrl;
-        let musicName = song.name;
-        let singer = song.ar[0].name;
-
-        let oldMusic={
-          songId,
-          img,
-          singer,
-          musicName,
-        }
-        this.$store.commit('addOldMusic', oldMusic)
-        this.$store.commit('updateOldMusicList')
-        let nowMusic ={
-          img,
-          musicName,
-          singer
-        }
-        this.$store.commit('setNowMusic', nowMusic)
+          let oldMusic={
+            songId,
+            img,
+            singer,
+            musicName,
+          }
+          this.$store.commit('addOldMusic', oldMusic)
+          this.$store.commit('updateOldMusicList')
+          let nowMusic ={
+            img,
+            musicName,
+            singer
+          }
+          this.$store.commit('setNowMusic', nowMusic)
+        })
       }
     },
     components:{Playing,NowPlaying}

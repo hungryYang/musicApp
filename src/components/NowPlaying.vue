@@ -9,7 +9,7 @@
       <div></div>
     </div>
     <div id="backImg">
-      
+
     </div>
     <audio id="play" loop autoplay controls="controls">
       <source :src="mp3">
@@ -29,10 +29,8 @@
     },
     updated:function(){
       var _this=this;
-      setTimeout(function(){
-        var audio = document.getElementById('play');
-        audio.setAttribute('src',_this.$store.state.mp3)
-      },500)
+      var audio = document.getElementById('play');
+      audio.setAttribute('src',_this.$store.state.mp3)
       document.querySelector('#backImg').style.background = 'url('+this.$store.state.nowPlay.img+')'+' repeat-x'
       document.querySelector('#backImg').style.backgroundSize = 'contain'
       // document.querySelector('#test').style.backgroundPosition = '1%'
